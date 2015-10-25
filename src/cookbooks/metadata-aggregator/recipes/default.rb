@@ -11,7 +11,7 @@ directory '/etc/repos/metadata-aggregator' do
   action :create
 end
 
-git '/etc/git/metadata-aggregator' do
+git '/etc/repos/metadata-aggregator' do
   repository 'https://metadata-aggregator:<token>@github.com/GSA/metadata-aggregator.git'
   revision 'master'
   user 'root'
